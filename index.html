@@ -172,7 +172,7 @@
 											<h1 class="center"> Contact Me </h1>
 											<div class="divcenter topmargin" style="max-width: 850px;">
 												<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-												<form class="nobottommargin" id="template-contactform" name="template-contactform" action="https://formspree.io/saufei@hotmail.com" method="post">
+												<form class="nobottommargin" id="template-contactform" name="template-contactform" action="https://formspree.io/saufei@hotmail.com" method="POST">
 													<div class="form-process"></div>
 													<div class="col_half">
 														<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
@@ -328,35 +328,31 @@
 											});
 										});
 										// Contact Form
-										$("#template-contactform").validate({
-												submitHandler: function(form) {
-													$('.form-process').fadeIn();
-													$(form).ajaxSubmit({
-														target: '#contact-form-result',
-														success: function() {
-															$('.form-process').fadeOut();
-															$(form).find('.sm-form-control').val('');
-															$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
-															SEMICOLON.widget.notifications($('#contact-form-result'));
-														}
-													});
-												}
-											});
-											// Widget Subscribe Form
-											$("#widget-subscribe-form").validate({
-												submitHandler: function(form) {
-													$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-													$(form).ajaxSubmit({
-														target: '#widget-subscribe-form-result',
-														success: function() {
-															$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-															$('#widget-subscribe-form').find('.form-control').val('');
-															$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
-															SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
-														}
-													});
-												}
-											});
+										// $("#template-contactform").validate({
+										// 		submitHandler: function(form) {
+										// 			$('.form-process').fadeIn();
+										// 			$('.form-process').fadeOut();
+										// 			$(form).find('.sm-form-control').val('');
+										// 			$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
+										// 			SEMICOLON.widget.notifications($('#contact-form-result'));
+													
+										// 		}
+										// 	});
+										// 	// Widget Subscribe Form
+										// 	$("#widget-subscribe-form").validate({
+										// 		submitHandler: function(form) {
+										// 			$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+										// 			$(form).ajaxSubmit({
+										// 				target: '#widget-subscribe-form-result',
+										// 				success: function() {
+										// 					$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+										// 					$('#widget-subscribe-form').find('.form-control').val('');
+										// 					$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+										// 					SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+										// 				}
+										// 			});
+										// 		}
+										// 	});
 									</script>
 									</script><!-- Portfolio Script End -->
 								</body>
