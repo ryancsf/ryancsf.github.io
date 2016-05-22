@@ -45,7 +45,6 @@
 						============================================= -->
 						<div id="logo">
 							<a href="index.html" class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img src="images/canvasone.png" alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img src="images/canvasone@2x.png" alt="Canvas Logo"></a>
 							</div><!-- #logo end -->
 							<!-- Primary Navigation
 							============================================= -->
@@ -173,7 +172,7 @@
 											<h1 class="center"> Contact Me </h1>
 											<div class="divcenter topmargin" style="max-width: 850px;">
 												<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
-												<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
+												<form class="nobottommargin" id="template-contactform" name="template-contactform" action="https://formspree.io/saufei@hotmail.com" method="post">
 													<div class="form-process"></div>
 													<div class="col_half">
 														<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control border-form-control required" placeholder="Name" />
@@ -281,18 +280,6 @@
 									<script type="text/javascript">
 										// Portfolio Script
 										jQuery(window).load(function(){
-											var jQuerycontainer = jQuery('#portfolio');
-											jQuerycontainer.isotope({
-												transitionDuration: '0.65s',
-												masonry: {
-													columnWidth: jQuerycontainer.find('.portfolio-item:not(.wide)')[0]
-												}
-											});
-											jQuery(window).resize(function() {
-												jQuerycontainer.isotope('layout');
-												SEMICOLON.portfolio.portfolioDescMargin();
-											});
-											var t = setTimeout(function(){ SEMICOLON.portfolio.portfolioDescMargin(); }, 200);
 											// Google Map
 											jQuery('#headquarters-map').gMap({
 												address: 'Kuala Lumpur, Malaysia',
