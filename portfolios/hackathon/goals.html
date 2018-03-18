@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Aviva | Get Set Goal</title>
+        <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/icon.css" type="text/css" />
+        <link rel="stylesheet" href="css/font.css" type="text/css" />
+        <link rel="stylesheet" href="css/app.css" type="text/css" />
+        <link rel="stylesheet" href="js/calendar/bootstrap_calendar.css" type="text/css" />
+        <!--[if lt IE 9]>
+        <script src="js/ie/html5shiv.js"></script>
+        <script src="js/ie/respond.min.js"></script>
+        <script src="js/ie/excanvas.js"></script>
+        <![endif]-->
+    </head>
+    <body class="">
+        <section class="vbox">
+            <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+                <div class="navbar-header aside-md dk dashboard-logo">
+                    <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/logo2.png" class="m-r-sm" alt="scale">
+                    </a>
+                    <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </div>
+                <form class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-sm bg-white b-white btn-icon"><i class="fa fa-search"></i></button>
+                            </span>
+                            <input type="text" class="form-control input-sm no-border" placeholder="Search goals">
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+                    <li class="hidden-xs">
+                        <a href="#">
+                            <i class="fa fa-dollar text-primary"></i>
+                            <span>500 DG Coins</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="thumb-sm avatar pull-left">
+                                <img src="images/a1.png" alt="...">
+                            </span>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <section>
+                <section class="hbox stretch">
+                    <!-- .aside -->
+                    <aside class="bg-black aside-md hidden-print" id="nav">
+                        <section class="vbox">
+                            <section class="w-f scrollable">
+                                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                                    <div class="clearfix wrapper nav-user hidden-xs">
+                                        <div>
+                                            <a href="#" class="header-link">
+                                                <span class="thumb avatar pull-left m-r">
+                                                    <img src="images/a1.png" class="dker" alt="...">
+                                                </span>
+                                                <span class="hidden-nav-xs clear">
+                                                    <h4 class="block m-t-xs">
+                                                    <strong class="font-bold text-lt">Jon Snow</strong>
+                                                    </h4>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- nav -->
+                                    <nav class="nav-primary hidden-xs">
+                                    <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">GENERAL</div>
+                                        <ul class="nav nav-main" data-ride="collapse">
+                                            <li>
+                                                <a href="dashboard.html" class="auto">
+                                                    <i class="fa fa-home">
+                                                    </i>
+                                                    <span class="font-bold">Home</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investments.html" class="auto">
+                                                    <i class="fa fa-signal"></i>
+                                                    <span class="font-bold">Investments</span>
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="goals.html" class="auto">
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="font-bold">Manage Goals</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="dg-coins.html" class="auto">
+                                                    <i class="fa fa-dollar"></i>
+                                                    <span class="font-bold">DG Coins</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <!-- / nav -->
+                                </div>
+                            </section>
+                            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                                <a href="signin.html"  class="btn btn-icon m-l-xs m-r-xs hidden-nav-xs footer-link"><span class="text-muted"> Logout</span> <i class="i i-logout"></i></a>
+                            </footer>
+                        </section>
+                    </aside>
+                    <!-- /.aside -->
+                    <section id="content">
+                        <section class="vbox">
+                            <section class="scrollable padder">
+                                <div class="m-b-md">
+                                    <div class="row">
+                                        <div class="col-sm-6 animated bounce">
+                                            <h1 class="m-b-xs text-black title">Goals</h1>
+                                            <h5>View, edit and manage all your goals here</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row animated fadeInUp">
+                                    <div class="col-md-12">
+                                        <table class="table table-striped m-b-none">
+                                            <thead>
+                                                <tr>
+                                                    <th>Goals</th>
+                                                    <th>Progress</th>
+                                                    <th> Status</th>
+                                                    <th width="70">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Send Antho to Harvard</td>
+                                                    <td>
+                                                        <div class="progress progress-sm progress-striped active m-t-xs m-b-none">
+                                                            <div class="progress-bar bg-warning" data-toggle="tooltip" data-original-title="80%" style="width: 80%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="fa fa-check"></i> On Track </td>
+                                                    <td class="text-right">
+                                                        <div class="btn-group">
+                                                            <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Send Marlon to Yale</td>
+                                                    <td>
+                                                        <div class="progress progress-sm progress-striped active m-t-xs m-b-none">
+                                                            <div class="progress-bar bg-info" data-toggle="tooltip" data-original-title="40%" style="width: 40%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="fa fa-check"></i> On Track </td>
+                                                    <td class="text-right">
+                                                        <div class="btn-group">
+                                                            <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Send Donnie to Standford</td>
+                                                    <td>
+                                                        <div class="progress progress-sm progress-striped active m-t-xs m-b-none">
+                                                            <div class="progress-bar bg-primary" data-toggle="tooltip" data-original-title="60%" style="width: 60%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="fa fa-check"></i> On Track </td>
+                                                    <td class="text-right">
+                                                        <div class="btn-group">
+                                                            <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Send Ryan to Oxford</td>
+                                                    <td>
+                                                        <div class="progress progress-sm progress-striped active m-t-xs m-b-none">
+                                                            <div class="progress-bar bg-danger" data-toggle="tooltip" data-original-title="33%" style="width: 33%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="fa fa-times"></i> Off Track </td>
+                                                    <td class="text-right">
+                                                        <div class="btn-group">
+                                                            <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Send Sanju to Cambridge</td>
+                                                    <td>
+                                                        <div class="progress progress-sm progress-striped active m-t-xs m-b-none">
+                                                            <div class="progress-bar bg-warning" data-toggle="tooltip" data-original-title="30%" style="width: 30%"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td><i class="fa fa-times"></i> Off Track </td>
+                                                    <td class="text-right">
+                                                        <div class="btn-group">
+                                                            <a href="#"><i class="fa fa-pencil"></i> Edit</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row animated fadeInDown">
+                                    <div class="col-md-12"><a href="#" class="btn btn-warning btn-rounded btn--add-goal"><i class="fa fa-plus"></i> Add Goals</a></div>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.js"></script>
+        <!-- App -->
+        <script src="js/app.js"></script>
+        <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="js/charts/flot/jquery.flot.min.js"></script>
+        <script src="js/charts/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="js/charts/flot/jquery.flot.spline.js"></script>
+        <script src="js/charts/flot/jquery.flot.pie.min.js"></script>
+        <script src="js/charts/flot/jquery.flot.resize.js"></script>
+        <script src="js/charts/flot/jquery.flot.grow.js"></script>
+        <script src="js/charts/flot/demo.js"></script>
+    </body>
+</html>

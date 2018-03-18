@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Aviva | Get Set Goal</title>
+        <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/icon.css" type="text/css" />
+        <link rel="stylesheet" href="css/font.css" type="text/css" />
+        <link rel="stylesheet" href="css/app.css" type="text/css" />
+        <!--[if lt IE 9]>
+        <script src="js/ie/html5shiv.js"></script>
+        <script src="js/ie/respond.min.js"></script>
+        <script src="js/ie/excanvas.js"></script>
+        <![endif]-->
+    </head>
+    <body class="">
+        <section class="vbox">
+            <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
+                <div class="navbar-header aside-md dk dashboard-logo">
+                    <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/logo2.png" class="m-r-sm" alt="scale">
+                    </a>
+                    <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </div>
+                <form class="navbar-form navbar-left input-s-lg m-t m-l-n-xs hidden-xs" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-sm bg-white b-white btn-icon"><i class="fa fa-search"></i></button>
+                            </span>
+                            <input type="text" class="form-control input-sm no-border" placeholder="Search goals">
+                        </div>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+                    <li class="hidden-xs">
+                      <a href="#nav, #sidebar" data-toggle="class:nav-xs, show">
+                        <i class="i i-grid"></i>
+                        <span class="badge badge-sm up bg-danger count" style="display: inline-block;">3</span>
+                      </a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="dg-coins.html">
+                            <i class="fa fa-dollar text-primary"></i>
+                            <span>500 DG Coins</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="signin.html">
+                            <span class="thumb-sm avatar pull-left">
+                                <img src="images/a1.png" alt="...">
+                            </span>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <section>
+                <section class="hbox stretch">
+                    <!-- .aside -->
+                    <aside class="bg-black aside-md hidden-print" id="nav">
+                        <section class="vbox">
+                            <section class="w-f scrollable">
+                                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="10px" data-railOpacity="0.2">
+                                    <div class="clearfix wrapper nav-user hidden-xs">
+                                        <div>
+                                            <a href="#" class="header-link">
+                                                <span class="thumb avatar pull-left m-r">
+                                                    <img src="images/a1.png" class="dker" alt="...">
+                                                </span>
+                                                <span class="hidden-nav-xs clear">
+                                                    <h4 class="block m-t-xs">
+                                                    <strong class="font-bold text-lt">Jon Snow</strong>
+                                                    </h4>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- nav -->
+                                    <nav class="nav-primary hidden-xs">
+                                    <div class="text-muted text-sm hidden-nav-xs padder m-t-sm m-b-sm">GENERAL</div>
+                                        <ul class="nav nav-main" data-ride="collapse">
+                                            <li class="active">
+                                                <a href="dashboard.html" class="auto">
+                                                    <i class="fa fa-home">
+                                                    </i>
+                                                    <span class="font-bold">Home</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="investments.html" class="auto">
+                                                    <i class="fa fa-signal"></i>
+                                                    <span class="font-bold">Investments</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="goals.html" class="auto">
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="font-bold">Manage Goals</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="dg-coins.html" class="auto">
+                                                    <i class="fa fa-dollar"></i>
+                                                    <span class="font-bold">DG Coins</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <!-- / nav -->
+                                </div>
+                            </section>
+                            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+                                <a href="signin.html"  class="btn btn-icon m-l-xs m-r-xs hidden-nav-xs footer-link"><span class="text-muted"> Logout</span> <i class="i i-logout"></i></a>
+                            </footer>
+                        </section>
+                    </aside>
+                    <!-- /.aside -->
+                    <section id="content">
+                        <section class="hbox stretch">
+                            <section>
+                                <section class="vbox">
+                                    <section class="scrollable padder">
+                                        <section class="row m-b-md">
+                                            <div class="m-b-md">
+                                                <div class="col-sm-6 animated bounce">
+                                                    <h1 class="m-b-xs text-black title">Welcome back, Jon</h1>
+                                                    <h5>Let's win the day!</h5>
+                                                </div>
+                                                <div class="col-sm-6 text-right text-left-xs m-t-md">
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel b-a animated bounceInUp">
+                                                    <div class="row m-n">
+                                                        <div class="col-md-4 b-b b-r">
+                                                            <a href="#" class="block padder-v hover">
+                                                                <span class="i-s i-s-2x pull-left m-r-sm">
+                                                                    <i class="i i-hexagon2 i-s-base text-warning-lt hover-rotate"></i>
+                                                                    <i class="fa fa-dollar text-white"></i>
+                                                                </span>
+                                                                <span class="clear">
+                                                                    <span class="h3 block m-t-xs text-warning">S$ 300,000</span>
+                                                                    <small class="text-muted text-u-c">Total Amount Saved</small>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4 b-b b-r">
+                                                            <a href="#" class="block padder-v hover">
+                                                                <span class="i-s i-s-2x pull-left m-r-sm">
+                                                                    <i class="i i-hexagon2 i-s-base text-success hover-rotate"></i>
+                                                                    <i class="i i-alarm i-sm text-white"></i>
+                                                                </span>
+                                                                <span class="clear">
+                                                                    <span class="h3 block m-t-xs text-success">200</span>
+                                                                    <small class="text-muted text-u-c">Days Left</small>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-4 b-b">
+                                                            <a href="#" class="block padder-v hover">
+                                                                <span class="i-s i-s-2x pull-left m-r-sm">
+                                                                    <i class="i i-hexagon2 i-s-base text-danger hover-rotate"></i>
+                                                                    <i class="fa fa-dollar fa-sm text-white"></i>
+                                                                </span>
+                                                                <span class="clear">
+                                                                    <span class="h3 block m-t-xs text-danger">S$ 1,200,000</span>
+                                                                    <small class="text-muted text-u-c">Total Target Amount</small>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row bg-light dk m-b progress-section">
+                                            <div class="col-md-12">
+                                                <section class="panel">
+                                                    <div class="panel-body">
+                                                        <div class="col-md-12 progress-bar-container animated fadeInRight">
+                                                            <div class="progress-container">
+                                                                <div class="progress__level-container">
+                                                                <img src="images/level-1-icon.png" class="progress__level"></div>
+                                                                <div class="progress__bar-container"><p class="section-title">Adam's Degree <span class="btn btn-s-md btn-warning btn-rounded"><i class="fa fa-check"></i> On Track</span> <span class="btn btn-s-md btn-success btn-rounded"><i class="fa fa-check"></i> Insured!</span>
+                                                                <a href="#" class="btn btn-s-md btn-success btn-rounded pull-right">View Details</a></p><div class="progress progress-sm progress-striped">
+                                                                <div class="progress-bar bg-warning" data-toggle="tooltip" data-original-title="48%" style="width: 48%;"></div>
+                                                            </div><h4 class="progress-bar__start">Amount Saved: S$4,000</h4><h4 class="progress-bar__end">Target Amount: S$10,000</h4></div></div>
+                                                        </div>
+                                                        <div class="col-md-12 progress-bar-container animated fadeInLeft">
+                                                            <div class="progress-container">
+                                                                <div class="progress__level-container">
+                                                                <img src="images/level-2-icon.png" class="progress__level"></div>
+                                                                <div class="progress__bar-container"><p class="section-title">My Ferrari <span class="btn btn-s-md btn-danger btn-rounded"><i class="fa fa-times"></i> Off Track</span> <span class="btn btn-s-md btn-primary btn-rounded"><i class="fa fa-times"></i> Not insured!</span>
+                                                                <a href="#" class="btn btn-s-md btn-success btn-rounded pull-right">View Details</a></p><div class="progress progress-sm progress-striped">
+                                                                <div class="progress-bar bg-danger" data-toggle="tooltip" data-original-title="18%" style="width: 18%;"></div>
+                                                            </div><h4 class="progress-bar__start">Amount Saved: S$18,000</h4><h4 class="progress-bar__end">Target Amount: S$100,000</h4></div></div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <div class="row animated bounceInUp">
+                                            <div class="col-md-12">
+                                                <p class="section-title">Share your goals
+                                                    </h4>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/goal.insurer/" class="panel__share">
+                                                        <div class="panel b-a">
+                                                            <div class="panel-heading no-border bg-primary lt text-center">
+                                                                <i class="fa fa-facebook fa fa-3x m-t m-b text-white"></i>
+                                                            </div>
+                                                            <div class="padder-v text-center clearfix">
+                                                                <h4 class="share-link">Share</h4>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <a href="https://twitter.com/home?status=https://www.facebook.com/goal.insurer/" class="panel__share">
+                                                        <div class="panel b-a">
+                                                            <div class="panel-heading no-border bg-twitter lter text-center">
+                                                                <i class="fa fa-twitter fa fa-3x m-t m-b text-white"></i>
+                                                            </div>
+                                                            <div class="padder-v text-center clearfix">
+                                                                <h4 class="share-link">Share</h4>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <a href="https://plus.google.com/share?url=https%3A//twitter.com/home?status=file%253A///C%253A/Users/CHONGR/develop/aviva-hackathon/gsg-web/dashboard.html" class="panel__share">
+                                                        <div class="panel b-a">
+                                                            <div class="panel-heading no-border bg-danger lt text-center">
+                                                                <i class="fa fa-google-plus fa fa-3x m-t m-b text-white"></i>
+                                                            </div>
+                                                            <div class="padder-v text-center clearfix">
+                                                                <h4 class="share-link">Share</h4>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.facebook.com/goal.insurer/&title=Our%20awesome%20saving%20app&summary=Awesome%20app%20to%20help%20you%20save%20your%20goal&source=" class="panel__share">
+                                                        <div class="panel b-a">
+                                                            <div class="panel-heading no-border bg-linkedin lter text-center">
+                                                                <i class="fa fa-linkedin fa fa-3x m-t m-b text-white"></i>
+                                                            </div>
+                                                            <div class="padder-v text-center clearfix">
+                                                                <h4 class="share-link">Share</h4>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </section>
+                                <!-- side content -->
+                                <aside class="aside-md bg-black hide" id="sidebar">
+                                    <section class="vbox animated fadeInRight">
+                                        <section class="scrollable">
+                                            <div class="wrapper"><strong>Live feed</strong></div>
+                                            <ul class="list-group no-bg no-borders auto">
+                                                <li class="list-group-item">
+                                                    <span class="fa-stack pull-left m-r-sm">
+                                                        <i class="fa fa-circle fa-stack-2x text-success"></i>
+                                                        <i class="fa fa-reply fa-stack-1x text-white"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <a href="#">Goody@gmail.com</a> likes your goal
+                                                        <small class="icon-muted">13 minutes ago</small>
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="fa-stack pull-left m-r-sm">
+                                                        <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                                                        <i class="fa fa-file-o fa-stack-1x text-white"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <a href="#">Mide@live.com</a> likes your goal
+                                                        <small class="icon-muted">20 minutes ago</small>
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="fa-stack pull-left m-r-sm">
+                                                        <i class="fa fa-circle fa-stack-2x text-info"></i>
+                                                        <i class="fa fa-map-marker fa-stack-1x text-white"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <a href="#">Geoge@yahoo.com</a> likes your goal
+                                                        <small class="icon-muted">1 hour ago</small>
+                                                    </span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="fa-stack pull-left m-r-sm">
+                                                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                                        <i class="fa fa-info fa-stack-1x text-white"></i>
+                                                    </span>
+                                                    <span class="clear">
+                                                        <a href="#"><strong>Admin</strong></a> shared a promotion
+                                                        <small class="icon-muted">1 day ago</small>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="wrapper"><strong>Friends</strong></div>
+                                            <ul class="list-group no-bg no-borders auto">
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <span class="pull-left thumb-sm avatar">
+                                                            <img src="images/a3.png" alt="..." class="img-circle">
+                                                            <i class="on b-black bottom"></i>
+                                                        </span>
+                                                        <div class="media-body">
+                                                            <div><a href="#">Chris Fox</a></div>
+                                                            <small class="text-muted">about 2 minutes ago</small>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <span class="pull-left thumb-sm avatar">
+                                                            <img src="images/a2.png" alt="...">
+                                                            <i class="on b-black bottom"></i>
+                                                        </span>
+                                                        <div class="media-body">
+                                                            <div><a href="#">Amanda Conlan</a></div>
+                                                            <small class="text-muted">about 2 hours ago</small>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <span class="pull-left thumb-sm avatar">
+                                                            <img src="images/a1.png" alt="...">
+                                                            <i class="busy b-black bottom"></i>
+                                                        </span>
+                                                        <div class="media-body">
+                                                            <div><a href="#">Dan Doorack</a></div>
+                                                            <small class="text-muted">3 days ago</small>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="media">
+                                                        <span class="pull-left thumb-sm avatar">
+                                                            <img src="images/a1.png" alt="...">
+                                                            <i class="away b-black bottom"></i>
+                                                        </span>
+                                                        <div class="media-body">
+                                                            <div><a href="#">Lauren Taylor</a></div>
+                                                            <small class="text-muted">about 2 minutes ago</small>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                </aside>
+                                <!-- / side content -->
+                            </section>
+                            <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <script src="js/jquery.min.js"></script>
+            <!-- Bootstrap -->
+            <script src="js/bootstrap.js"></script>
+            <!-- App -->
+            <script src="js/app.js"></script>
+            <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+            <script src="js/charts/flot/jquery.flot.min.js"></script>
+            <script src="js/charts/flot/jquery.flot.tooltip.min.js"></script>
+            <script src="js/charts/flot/jquery.flot.spline.js"></script>
+            <script src="js/charts/flot/jquery.flot.pie.min.js"></script>
+            <script src="js/charts/flot/jquery.flot.resize.js"></script>
+            <script src="js/charts/flot/jquery.flot.grow.js"></script>
+            <script src="js/charts/flot/demo.js"></script>
+        </body>
+    </html>

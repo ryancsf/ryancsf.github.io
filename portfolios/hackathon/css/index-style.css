@@ -1,0 +1,300 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+@font-face {
+	font-family: 'codrops';
+	font-style: normal;
+	font-weight: normal;
+
+	src: url('../fonts/codrops/codrops.eot');
+	src: url('../fonts/codrops/codrops.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/codrops/codrops.woff') format('woff'),
+	url('../fonts/codrops/codrops.ttf') format('truetype'),
+	url('../fonts/codrops/codrops.svg#codrops') format('svg');
+}
+
+*,
+*:after,
+*:before {
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+/* Aviva yellow */
+body {
+	color: #444444;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.header-logo {
+	width: 250px;
+}
+
+a {
+	color: rgba(0,0,0,.25);
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: rgba(0,0,0,.6);
+}
+
+.aviva-header {
+	background: #ffd900;
+	margin: 0 auto;
+	padding: 2em 1em;
+	text-align: center;
+}
+
+.aviva-header h1 {
+	font-size: 2.5em;
+	font-weight: 400;
+	margin: 0;
+}
+
+.aviva-header h1 span {
+	display: block;
+	font-size: .6em;
+	opacity: .7;
+	padding: 0 0 .6em .1em;
+}
+
+/* To Navigation Style */
+.aviva-top {
+	font-size: .69em;
+	font-weight: 700;
+	line-height: 2.2;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.aviva-top a {
+	display: inline-block;
+	letter-spacing: 1px;
+	padding: 0 1em;
+	text-decoration: none;
+}
+
+.aviva-top span.right {
+	float: right;
+}
+
+.aviva-top span.right a {
+	display: block;
+	float: left;
+}
+
+.aviva-icon:before {
+	font-family: 'codropsicons';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 4px;
+	text-transform: none;
+
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.aviva-icon-drop:before {
+	content: '\e001';
+}
+
+.aviva-icon-prev:before {
+	content: '\e004';
+}
+
+section {
+	padding: 4.5em 2em;
+	text-align: center;
+}
+
+@media screen and (max-width: 44.75em) {
+	section {
+		padding: 1em 2em;
+	}
+}
+
+@media screen and (max-width: 25em) {
+	.aviva-header {
+		font-size: .8em;
+	}
+	section.related {
+		font-size: 1.2em;
+	}
+	.aviva-icon span {
+		display: none;
+	}
+}
+
+.form__img {
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+}
+
+.current,
+.questions {
+	text-align: center;
+}
+
+.footer {
+	background: #333333;
+	border-top: 2px solid #eeeeee;
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.footer-copyright {
+	color: #ffffff;
+}
+
+.form__button {
+	background: #0099cc;
+	box-shadow: 0 6px #037499;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 15px 20px;
+	position: relative;
+	text-decoration: none;
+	transition: all .3s;
+	font-size: 25px;
+	width: 180px;
+	display: block;
+	margin: 20px auto;
+}
+
+.form__button:hover {
+	box-shadow: 0 4px #037499;
+	color: #ffffff;
+	top: 2px;
+}
+
+.landing-container p {
+	font-size: 1.5em;
+}
+
+.chart-text {
+	margin: 20px auto;
+}
+
+/* Essentials */
+.question-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: none;
+}
+
+.question-container input {
+    border: none;
+    border-bottom: 1px solid #dfdbdb;
+    padding: 5px 10px 5px 5px;
+    transition: all .2s;
+    margin: 20px 0;
+}
+
+.question-container input,
+.question-container span {
+	font-size: 25px;
+}
+
+.question-container input:focus {
+    outline: none;
+    border-color: #29aee4
+}
+
+.colored-span {
+	color: #fa7c92;
+	font-size: 30px !important;
+}
+
+input {
+	width: 250px;
+}
+
+input[name="goal"] {
+    width: 80%;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+.question-container h2 {
+	line-height: 1.5;
+}
+
+form.questions-container {
+	max-height: 500px;
+	overflow: hidden;
+}
+
+@media(max-width:991px) {
+	.question-container h2 {
+		font-size: 25px;
+	}
+}
+
+.links-list {
+	text-align: left;
+}
+.links-list li a {
+	color: black !important;
+}
+
+.question-2 + .typeahead.dropdown-menu {
+	width: 80%;
+	margin-top: 18px;
+}
+
+.question-country + .typeahead.dropdown-menu {
+	width: 34%;
+	margin-top: 18px;
+}
+
+.question-profession + .typeahead.dropdown-menu {
+	width: 33%;
+	margin-top: 18px;
+}
