@@ -1,0 +1,44 @@
+.main-header {
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+.accordion-container {
+    padding: 0 !important;
+}
+
+.accordion-container > .content {
+    padding: .5em 2em 1.5em !important;
+}
+
+.accordion-container .title {
+    color: #ffffff !important;
+    position: relative;
+}
+
+.tokyo__label, 
+.osaka__label {
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+background: #34495e;
+border-radius: 10px;
+height: 20px;
+padding: 0 10px;
+position: absolute;
+right: 10px;
+width: 75px;
+}
+
+.title.active,
+.accordion-container .title:hover {
+    color: #233237 !important;
+}
+
+.tokyo {
+    background-color: #ff3b3f;
+}
+
+.osaka {
+    background-color: #3b78ff;
+}
