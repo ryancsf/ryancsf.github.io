@@ -810,11 +810,6 @@ textarea.border-form-control {
 }
 
 /* Custom Styles */
-.img-responsive {
-	max-height: 260px;
-	margin: 0 auto;
-}
-
 .hero-section {
 	background: url('images/page/hero-bg.jpg');
 	background-size: cover;
@@ -834,4 +829,15 @@ textarea.border-form-control {
 
 .hero__container {
 	text-align: center;
+}
+
+.made-with {
+	margin-bottom: 30px;
+}
+
+.made-with .tag {
+	padding: 8px;
+	border-radius: 8px;
+	background-color: #ebf1f5;
+	margin-right: 4px;
 }
