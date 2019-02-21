@@ -809,3 +809,29 @@ textarea.border-form-control {
 
 }
 
+/* Custom Styles */
+.img-responsive {
+	max-height: 260px;
+	margin: 0 auto;
+}
+
+.hero-section {
+	background: url('images/page/hero-bg.jpg');
+	background-size: cover;
+	background-position:center;
+	position: relative;
+}
+
+.hero__sub-copy {
+	color: #333;
+	line-height: 1.5;
+}
+
+.hero__profile {
+	border-radius: 50%;
+ 	border: 2px solid #f4f6fa;
+}
+
+.hero__container {
+	text-align: center;
+}
